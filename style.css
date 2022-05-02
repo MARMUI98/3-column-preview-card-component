@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Bright_orange : hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --very_Dark_cyan: hsl(179, 100%, 13%);
+
+    --Light_gray: hsl(0, 0%, 95%);
+    --Transparent_white : hsla(0, 0%, 100%, 0.75);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+}
+
+body{
+    background-color: var(--Light_gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    width: 1440px;
+    
+}
+
+.sedans{
+
+
+    background-color: var(--Bright_orange);
+    padding: 5rem;
+    width: 33.3%;
+    border-radius: 15px 0 0 15px;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 4rem;
+    color: var(--Light_gray);
+    margin: 2rem auto;
+}
+p{
+    color: var(--Transparent_white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 10rem;
+    
+}
+.learn-btn{
+    text-decoration: none;
+    font-size: 1.5rem ;
+    background-color: var(--Light_gray);
+    padding: 1.2rem 3rem;
+    border-radius: 3rem;
+    border: 3px solid var(--Light_gray);
+}
+.sedans .learn-btn{
+    color: var(--Bright_orange);
+}
+.sedans .learn-btn:hover{
+    background-color: var(--Bright_orange);
+    color: var(--Light_gray);
+    transition: 500ms;
+}
+.suvs .learn-btn{
+    color: var(--Dark_cyan);
+}
+.suvs .learn-btn:hover{
+    background-color: var(--Dark_cyan);
+    color: var(--Light_gray);
+    transition: 500ms;
+}
+.luxury .learn-btn{
+    color: var(--very_Dark_cyan);
+}
+.luxury .learn-btn:hover{
+    background-color: var(--very_Dark_cyan);
+    color: var(--Light_gray);
+    transition: 500ms;
+}
+
+.suvs{
+
+    background-color: var(--Dark_cyan);
+    padding: 5rem;
+    width: 33.3%;
+}
+
+.luxury{
+
+    background-color: var(--very_Dark_cyan);
+    padding: 5rem;
+    width: 33.3%;
+    border-radius: 0 15px 15px 0;
+}
+img{
+    width: 90px;
+}
+
+@media only screen and (max-width: 960px){
+    body{
+        height: auto;
+    }
+    .menu{
+        width: 375px;
+        flex-direction: column;
+        margin: 5rem 0 ;
+
+    }
+    .sedans, .suvs, .luxury{
+        width: 100%;
+        padding: 4rem;
+    }
+    .sedans{
+        border-radius: 15px 15px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 15px 15px ;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+
+}
